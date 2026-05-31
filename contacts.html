@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Тренды в соцсетях</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Шапка страницы -->
+  <header class="contacts-header site-header">
+  <div class="header-top">
+    <div class="logo">Social Trends</div>
+
+    <h1>Контакты</h1>
+  </div>
+
+  <nav>
+    <ul class="flex-nav">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="contacts.html" class="active">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Основная часть страницы -->
+  <main class="contacts-page">
+    <section class="contacts-layout">
+      <!-- Информационная карточка -->
+      <article class="contact-card">
+        <h2>Информация о разработчике</h2>
+
+        <div class="contact-info">
+          <p class="info-item person">ФИО: Алексеева Алёна Морозова</p>
+          <p class="info-item email">Email: alenamoroz1203@gmail.com</p>
+          <p class="info-item theme">Специализация: тренды TikTok и Telegram</p>
+          <p class="info-item location">Местоположение: Москва, Россия</p>
+        </div>
+
+        <h3>Социальные сети и мессенджеры</h3>
+
+        <ul class="social-links">
+          <li><a href="https://t.me/alenoou58" target="_blank">Telegram</a>
+          </li>
+          <li><a href="https://www.tiktok.com/@alenkauua" target="_blank">TikTok</a>
+          </li>
+          <li><a href="https://vk.ru/alenoouu58" target="_blank">VK</a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Форма обратной связи -->
+      <section class="feedback-form-section">
+        <h2>Форма обратной связи</h2>
+
+        <form class="feedback-form" action="#" method="post">
+          <div class="form-group required-field">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+          </div>
+
+          <div class="form-group required-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+          </div>
+
+          <div class="form-group">
+            <label for="topic">Тема сообщения</label>
+            <select id="topic" name="topic">
+              <option value="question">Вопрос по сайту</option>
+              <option value="idea">Предложить тренд</option>
+              <option value="cooperation">Сотрудничество</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+
+          <div class="form-group required-field">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" placeholder="Напишите ваше сообщение..." required></textarea>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">Я согласен на обработку данных</label>
+          </div>
+
+          <button type="submit" class="send-btn">Отправить сообщение</button>
+        </form>
+      </section>
+    </section>
+
+    <!-- Дополнительный информационный блок -->
+    <section class="extra-info">
+      <article class="work-time">
+        <h2>График доступности</h2>
+        <p>Ответы на сообщения обрабатываются с понедельника по пятницу.</p>
+        <p>Время ответа: с 10:00 до 18:00.</p>
+      </article>
+
+      <article class="faq-block">
+        <h2>FAQ</h2>
+
+        <div class="faq-item">
+          <h3>Можно ли предложить тему для сайта?</h3>
+          <p>Да, можно отправить идею через форму обратной связи.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Можно ли добавить новый раздел?</h3>
+          <p>Да, в будущем можно добавить страницы с фактами, новостями и подборками трендов.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>О чём этот сайт?</h3>
+          <p>Сайт посвящён трендам в социальных сетях, особенно TikTok и Telegram.</p>
+        </div>
+      </article>
+
+      <article class="instruction-block">
+        <h2>Как связаться?</h2>
+        <p>Заполните форму обратной связи, укажите email и выберите тему сообщения.</p>
+        <p>После отправки данные формы не передаются на сервер, так как сайт является учебным проектом.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer>
+    <p>© Алёна Морозова, 2026</p>
+    <p class="js-status">Все права защищены</p>
+  </footer>
+</body>
+</html>

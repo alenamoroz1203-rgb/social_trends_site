@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея — Тренды в соцсетях</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Шапка страницы галереи -->
+  <header class="gallery-header site-header">
+  <div class="header-top">
+    <div class="logo">Social Trends</div>
+
+    <div>
+      <h1>Галерея трендов в соцсетях</h1>
+      <p class="subtitle">
+        Коллекция изображений по теме:
+        <span class="theme-name">TikTok и Telegram</span>
+      </p>
+    </div>
+  </div>
+
+  <nav>
+    <ul class="flex-nav">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="gallery.html" class="active">Галерея</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Основная часть -->
+  <main class="gallery-container">
+    <section class="controls-panel">
+      <div class="stats">
+        <span class="stat-item">
+          Изображений: <span id="image-counter">0</span>
+        </span>
+
+        <span class="stat-item">
+          Всего лайков: <span id="total-likes">0</span>
+        </span>
+      </div>
+
+      <div class="view-controls">
+        <button id="grid-view" class="view-btn active">Сетка</button>
+        <button id="list-view" class="view-btn">Список</button>
+      </div>
+    </section>
+
+    <section class="filters">
+      <h2>Фильтры</h2>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="tiktok">TikTok</button>
+        <button class="filter-btn" data-filter="telegram">Telegram</button>
+        <button class="filter-btn" data-filter="content">Контент</button>
+      </div>
+    </section>
+
+    <!-- Галерея с CSS Grid -->
+    <section class="gallery-grid" id="image-gallery">
+      <article class="image-card" data-category="tiktok">
+        <div class="card-image">
+          <img src="images/tiktok-trends.jpg" alt="Популярные TikTok-тренды и короткие видео" class="gallery-img" loading="lazy">
+
+          <div class="image-overlay">
+            <button class="like-btn">
+              ❤ <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3 class="image-title">TikTok-тренды</h3>
+          <p class="image-date">15 марта 2026</p>
+          <p class="image-description">
+            Короткие видео быстро становятся вирусными и формируют новые интернет-тренды.
+          </p>
+
+          <div class="image-tags">
+            <span class="tag">TikTok</span>
+            <span class="tag">видео</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="image-card" data-category="telegram">
+        <div class="card-image">
+          <img src="images/telegram-channels.jpg" alt="Telegram-каналы с новостями и полезной информацией" class="gallery-img" loading="lazy">
+
+          <div class="image-overlay">
+            <button class="like-btn">
+              ❤ <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3 class="image-title">Telegram-каналы</h3>
+          <p class="image-date">18 марта 2026</p>
+          <p class="image-description">
+            Telegram помогает быстро получать новости, читать блоги и следить за интересными сообществами.
+          </p>
+
+          <div class="image-tags">
+            <span class="tag">Telegram</span>
+            <span class="tag">каналы</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="image-card" data-category="content">
+        <div class="card-image">
+          <img src="images/viral-video.jpg" alt="Вирусное видео в социальных сетях" class="gallery-img" loading="lazy">
+
+          <div class="image-overlay">
+            <button class="like-btn">
+              ❤ <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3 class="image-title">Вирусные видео</h3>
+          <p class="image-date">21 марта 2026</p>
+          <p class="image-description">
+            Вирусный контент может за короткое время набрать много просмотров и обсуждений.
+          </p>
+
+          <div class="image-tags">
+            <span class="tag">контент</span>
+            <span class="tag">тренды</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="image-card" data-category="content">
+        <div class="card-image">
+          <img src="images/bloggers.jpg" alt="Блогеры создают контент для социальных сетей" class="gallery-img" loading="lazy">
+
+          <div class="image-overlay">
+            <button class="like-btn">
+              ❤ <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3 class="image-title">Блогеры</h3>
+          <p class="image-date">25 марта 2026</p>
+          <p class="image-description">
+            Блогеры создают личный бренд, развивают аудиторию и влияют на популярные темы.
+          </p>
+
+          <div class="image-tags">
+            <span class="tag">блогеры</span>
+            <span class="tag">бренд</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="image-card" data-category="tiktok">
+        <div class="card-image">
+          <img src="images/memes.jpg" alt="Мемы и развлекательный контент в TikTok" class="gallery-img" loading="lazy">
+
+          <div class="image-overlay">
+            <button class="like-btn">
+              ❤ <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3 class="image-title">Мемы и челленджи</h3>
+          <p class="image-date">29 марта 2026</p>
+          <p class="image-description">
+            Мемы и челленджи часто становятся основой популярных публикаций в TikTok.
+          </p>
+
+          <div class="image-tags">
+            <span class="tag">мемы</span>
+            <span class="tag">TikTok</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="image-card" data-category="telegram">
+        <div class="card-image">
+          <img src="images/digital-news.jpg" alt="Цифровые новости в Telegram и социальных сетях" class="gallery-img" loading="lazy">
+
+          <div class="image-overlay">
+            <button class="like-btn">
+              ❤ <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3 class="image-title">Цифровые новости</h3>
+          <p class="image-date">2 апреля 2026</p>
+          <p class="image-description">
+            Социальные сети позволяют быстро узнавать о событиях и обсуждать их с другими пользователями.
+          </p>
+
+          <div class="image-tags">
+            <span class="tag">новости</span>
+            <span class="tag">Telegram</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <aside class="gallery-info">
+      <h2>Интересный факт</h2>
+      <p>
+        Социальные сети стали не только местом общения, но и площадкой для обучения,
+        продвижения проектов, новостей и творчества.
+      </p>
+    </aside>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="gallery-footer">
+    <p>© Алёна Морозова, 2026</p>
+    <p class="js-status">Все права защищены</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
